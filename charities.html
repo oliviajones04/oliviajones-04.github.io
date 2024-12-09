@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub - Charities List</title>
+    <link rel="stylesheet" href="style.css">
+      
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="charities.html">Charity List</a></li>
+        <li><a href="charity-profile.html">Information</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+      </ul>
+    <!-- Header -->
+    <header>
+        <h1>HelpHub</h1>
+        <p>Find a Charity to Volunteer With</p>
+    </header>
+
+
+    <!-- Search & Filters -->
+    <section>
+        <h2>Search and Filter Charities</h2>
+        <input type="text" placeholder="Search by name...">
+        <button>Search</button>
+        <br><br>
+        <select>
+            <option>Filter by Category</option>
+            <option>Animal Shelter</option>
+            <option>Food</option>
+            <option>Environment</option>
+        </select>
+    </section>
+
+    <!-- Charities List -->
+    <section>
+        <h3>Charities Who Need Help</h3>
+        <div class="charity-card">
+            <h4>New Hope Shelter</h4>
+            <p>Houses abandoned animals who need a home.</p>
+            <button class="cta-button" onclick="window.location.href='charity-profile.html'">View Charity</button>
+        </div>
+        <div class="charity-card">
+            <h4>Chicago Food Bank</h4>
+            <p>Provides meals and food to people in need.</p>
+            <button class="cta-button" onclick="window.location.href='charity-profile.html'">View Charity</button>
+        </div>
+        <div class="charity-card">
+            <h4>Clean Chicago</h4>
+            <p>Organizes city-wide clean ups.</p>
+            <button class="cta-button" onclick="window.location.href='charity-profile.html'">View Charity</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 HelpHub - All rights reserved</p>
+        <p><a href="privacy.html" style="color: white;">Privacy Policy</a> | <a href="terms.html" style="color: white;">Terms of Service</a></p>
+    </footer>
+</body>
+</html>

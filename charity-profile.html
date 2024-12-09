@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HelpHub - Charity Profile</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <ul>
+   <li><a href="index.html">Home</a></li>
+   <li><a href="charities.html">Charity List</a></li>
+   <li><a class="active" href="charity-profile.html">Information</a></li>
+   <li><a href="volunteer.html">Volunteer</a></li>
+ </ul>
+
+
+ <!-- Header -->
+ <header>
+   <h1>HelpHub</h1>
+   <p>Charity Profile</p>
+ </header>
+
+
+ <!-- Charity Information -->
+ <section>
+   <h2 id="new-hope-name">Charity Name: New Hope Shelter</h2>
+   <p class="charity-description" style="display: none;">New Hope takes in dogs and cats from all places and provides them a home until they can find their forever home.</p>
+   <p class="charity-location" style="display: none;">Location: Chicago, Illinois</p>
+   <p class="charity-contact" style="display: none;">Contact: NewHope@gmail.com</p>
+   <button class="cta-button volunteer-btn">Volunteer Now</button>
+ </section>
+
+
+ <section>
+   <h2 id="chicago-food-bank-name">Charity Name: Chicago Food Bank</h2>
+   <p class="charity-description" style="display: none;">The Chicago Food Bank provides meals multiple times a week and gives out canned food to anyone in need throughout Chicago.</p>
+   <p class="charity-location" style="display: none;">Location: Chicago, Illinois</p>
+   <p class="charity-contact" style="display: none;">Contact: FoodBankContact@gmail.com</p>
+   <button class="cta-button volunteer-btn">Volunteer Now</button>
+ </section>
+
+
+ <section>
+   <h2 id="clean-chicago-name">Charity Name: Clean Chicago</h2>
+   <p class="charity-description" style="display: none;">Show your pride in Chicago by helping clean up local neighborhoods and parks during monthly cleanup events.</p>
+   <p class="charity-location" style="display: none;">Location: Chicago, Illinois</p>
+   <p class="charity-contact" style="display: none;">Contact: CleanUpChicago@volunteer.org</p>
+   <button class="cta-button volunteer-btn">Volunteer Now</button>
+ </section>
+
+<!-- Hidden Volunteer Contact Form -->
+<div id="volunteer-form-overlay" style="display: none;"></div>  <!-- Overlay background -->
+<div id="volunteer-form" style="display: none;">
+   <h3>Contact Information</h3>
+   <form id="volunteer-form-content">
+     <label for="name">Full Name:</label>
+     <input type="text" id="name" name="name" required>
+     <label for="email">Email:</label>
+     <input type="email" id="email" name="email" required>
+     <button type="submit">Submit</button>
+   </form>
+</div>
+
+ 
+ <!-- Hidden Volunteer Contact Form -->
+ <div id="volunteer-form" style="display: none;">
+   <h3>Contact Information</h3>
+   <form id="volunteer-form-content">
+     <label for="name">Full Name:</label>
+     <input type="text" id="name" name="name" required>
+     <label for="email">Email:</label>
+     <input type="email" id="email" name="email" required>
+     <button type="submit">Submit</button>
+   </form>
+ </div>
+
+
+ <!-- Footer -->
+ <footer>
+   <p>&copy; 2024 HelpHub - All rights reserved</p>
+   <p><a href="privacy.html" style="color: white;">Privacy Policy</a> | <a href="terms.html" style="color: white;">Terms of Service</a></p>
+ </footer>
+
+
+ <!-- Link to JavaScript file -->
+ <script src="charity-profile.js"></script>
+</body>
+</html>
+
+

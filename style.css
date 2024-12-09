@@ -1,0 +1,437 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f6f6db;
+}
+
+/* Header Section */
+header {
+    background-color: #104730;  
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Search & Filters Section */
+section {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+section input,
+section select {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+section button {
+    padding: 10px 20px;
+    background-color: #104730;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+section button:hover {
+    background-color: #006d47;  /* Green on hover */
+}
+
+/* Charities List Section */
+.charity-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.charity-card:hover {
+    transform: scale(1.05);
+}
+
+.charity-card h4 {
+    color: #104730;
+    font-size: 1.5rem;
+}
+
+.charity-card p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #28a745;  /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;  /* Darker Green on hover */
+}
+
+/* Footer Section */
+footer {
+    background-color: #007bff;  /* Blue background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 0;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #28a745;  /* Green on hover */
+}
+
+/* Social Media Bar */
+.social-media-bar {
+    background-color: #f6f6db; /* Dark background for social media bar */
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 0; /* Add space between social media bar and footer */
+}
+
+.social-media-bar a {
+    margin: 0 15px;
+    font-size: 2rem;
+    color: #a67b5c;
+    transition: color 0.3s ease;
+}
+
+.social-media-bar a:hover {
+    color: #104730;  /* Blue color on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav .nav-links li {
+        width: 100%;
+        text-align: left;
+        margin: 5px 0;
+    }
+
+    .charity-card {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .social-media-bar a {
+        font-size: 1.5rem;  /* Smaller icons on mobile */
+        margin: 0 10px;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+    background-color: #111;
+}
+  
+.active {
+    background-color: #04AA6D;
+}
+  
+body { font-family: Arial, sans-serif; }
+header { background: #266150; color: white; padding: 20px; text-align: center; }
+nav { display: flex; justify-content: flex-end; margin-top: 10px; }
+nav a { color: white; margin: 0 15px; text-decoration: none; }
+section { text-align: center; margin-top: 50px; }
+.cta-button { padding: 15px 30px; background-color: #6d9775; color: white; border: none; cursor: pointer; }
+footer { background: #266150; color: white; padding: 20px; text-align: center; margin-top: 50px; }
+
+header i {
+    font-size: 2.5rem;  /* Adjust the icon size */
+    margin-left: 10px;  /* Space between title and icon */
+    color: #fff;  /* Icon color */
+}
+
+/* Volunteer form styles */
+#volunteer-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    width: 300px;
+    display: none; /* Initially hidden */
+ }
+ 
+ #volunteer-form label {
+    display: block;
+    margin: 5px 0;
+ }
+ 
+ #volunteer-form input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+ }
+ 
+ #volunteer-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+ }
+ 
+ #volunteer-form button:hover {
+    background-color: #45a049;
+ }
+ 
+ /* Show description on hover */
+ h2 {
+    cursor: pointer;
+ }
+ 
+ section p {
+    display: none; /* Hide description initially */
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+ }
+ 
+ /* General Styles */
+ body {
+    font-family: Arial, sans-serif;
+ }
+ 
+ ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+ }
+ 
+ ul li {
+    display: inline;
+    margin-right: 10px;
+ }
+ 
+ ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+ }
+ 
+ ul li a.active {
+    background-color: #4CAF50;
+ }
+ 
+ header {
+    text-align: center;
+    margin: 20px 0;
+ }
+ 
+ h1 {
+    font-size: 36px;
+ }
+ 
+ .cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+ }
+ 
+ .cta-button:hover {
+    background-color: #45a049;
+ }
+ 
+ /* Centered Volunteer Form */
+ #volunteer-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 300px;
+    display: none; /* Initially hidden */
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ #volunteer-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none; /* Initially hidden */
+ }
+ 
+ /* Form Styles */
+ #volunteer-form label {
+    display: block;
+    margin: 10px 0 5px;
+ }
+ 
+ #volunteer-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+ }
+ 
+ #volunteer-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+ }
+ 
+ #volunteer-form button:hover {
+    background-color: #45a049;
+ }
+ 
+ /* Charity Description */
+ section p.charity-description {
+    display: none;
+ }
+ 
+ section p.charity-location,
+ section p.charity-contact {
+    display: none;
+ }
+ 
+ /* Charity Hover Effects */
+ section h2:hover + .charity-description,
+ section h2:hover + .charity-description + .charity-location,
+ section h2:hover + .charity-description + .charity-location + .charity-contact {
+    display: block;
+ }
+ 
+ section h2 {
+    cursor: pointer;
+ }
+ 
+ /* Overlay Styles */
+#volunteer-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);  /* Semi-transparent black */
+    z-index: 999; /* Make sure it's above other elements */
+    display: none; /* Initially hidden */
+}
+
+#volunteer-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 300px;
+    display: none; /* Initially hidden */
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+ /* Centering the button */
+#volunteer-list-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #6d9775;  /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;  /* Make the button inline so it can be centered */
+    margin-top: 20px;
+}
+
+/* Hover effect */
+.cta-button:hover {
+    background-color: #218838;  /* Darker Green on hover */
+}
+
+/* Add additional padding and margin */
+#volunteer-list-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+
+
+ 
+ 
